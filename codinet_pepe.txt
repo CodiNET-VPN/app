@@ -1,0 +1,27 @@
+#subscription-userinfo: upload=0; download=0; total=9999999999999999; expire=1798761600
+#announce: 🚀 Бесплатная подписка от @CodiNetVPN
+#profile-title: 🌟 CodiNET | Pepe
+#profile-update-interval: 12
+#profile-web-page-url: https://t.me/CodiNetVPN
+#support-url: https://t.me/CodiNetVPNbot
+
+========== 🇫🇮 Финляндия ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@fast_s91.screw.page:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=fast_s91.screw.page&fp=firefox&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇫🇮 Финляндия | Рекомендуемый
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@fast93.screw.page:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=fast93.screw.page&fp=firefox&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇫🇮 Финляндия | Резерв
+hy2://8666c1f9-88a2-4f02-a641-654b41c88be6@fast_s96.screw.page:443?sni=fast_s96.screw.page&fm=%7B%22finalmask%22%3A%7B%22quicParams%22%3A%7B%22congestion%22%3A%22brutal%22%7D%7D%7D#CodiNET | Pepe 🇫🇮 Финляндия | Hysteria | Быстрый
+hy2://8666c1f9-88a2-4f02-a641-654b41c88be6@fast99.screw.page:443?sni=fast99.screw.page&fm=%7B%22finalmask%22%3A%7B%22quicParams%22%3A%7B%22congestion%22%3A%22brutal%22%7D%7D%7D#CodiNET | Pepe 🇫🇮 Финляндия | Hysteria | Резерв
+
+========== 🇩🇪 Германия ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@fra14.roscomsosal.de:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=fra14.roscomsosal.de&fp=firefox&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇩🇪 Германия | TLS
+
+========== 🇺🇸 США ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@testusa7.hutsharing.com:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=testusa7.hutsharing.com&fp=chrome&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇺🇸 США | TLS
+
+========== 🇳🇱 Нидерланды ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@nl13.roscomsosal.de:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=nl13.roscomsosal.de&fp=qq&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇳🇱 Нидерланды | TLS
+
+========== 🇵🇱 Польша ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@gem5.hutsharing.com:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=gem5.hutsharing.com&fp=edge&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇵🇱 Польша | TLS
+
+========== 🇷🇺 Россия ==========
+vless://8666c1f9-88a2-4f02-a641-654b41c88be6@rus36.roscomsosal.de:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=rus36.roscomsosal.de&fp=chrome&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#CodiNET | Pepe 🇷🇺 Россия | TLS

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>🐸 CodiNET | Pepe — Зашифрованная подписка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Шапка */
+        .header {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+
+        .logo h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 8px;
+        }
+
+        .logo h2 span {
+            color: #7b1fa2;
+        }
+
+        .slogan {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Основная карточка */
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 32px 24px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .badge {
+            background: #f3e5f5;
+            color: #6a1b9a;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .price span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #666;
+        }
+
+        .description {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .features {
+            margin-bottom: 28px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .feature::before {
+            content: "✓";
+            color: #7b1fa2;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 12px;
+        }
+
+        .btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .btn-pepe {
+            background: linear-gradient(135deg, #7b1fa2, #9c27b0);
+            color: white;
+        }
+
+        .btn-pepe:hover {
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+        }
+
+        .btn-copy {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .btn-copy:hover {
+            background: #333;
+        }
+
+        .btn-v2ray {
+            background: #37474f;
+            color: white;
+        }
+
+        .btn-v2ray:hover {
+            background: #455a64;
+        }
+
+        .manual-link {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .manual-link .link-label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .manual-link .link-value {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            color: #555;
+            margin-top: 6px;
+            display: block;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .manual-link .link-value:hover {
+            color: #7b1fa2;
+        }
+
+        .info {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Блок с Telegram */
+        .telegram-section {
+            background: white;
+            border-radius: 20px;
+            padding: 24px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .telegram-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .telegram-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .telegram-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #e8f0fe;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .telegram-link:hover {
+            background: #d4e4fc;
+        }
+
+        .footer {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+            padding: 16px;
+        }
+
+        .footer a {
+            color: #7b1fa2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) scale(0.9);
+            background: #1a1a1a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0;
+            transition: all 0.2s ease;
+            pointer-events: none;
+            z-index: 1000;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+
+        hr {
+            margin: 16px 0;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 500px) {
+            .toast {
+                font-size: 12px;
+                padding: 10px 20px;
+                white-space: normal;
+                text-align: center;
+                max-width: 80%;
+            }
+            .telegram-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .telegram-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <div class="header">
+        <div class="logo">
+            🔐
+            <h2>CodiNET <span>|</span> Pepe</h2>
+        </div>
+        <div class="slogan">
+            Зашифрованная подписка для Happ
+        </div>
+    </div>
+
+    <!-- Карточка Pepe -->
+    <div class="card">
+        <div class="badge">🐸 Зашифрованная подписка</div>
+        <h1>Pepe</h1>
+        <div class="price">0 ₽ <span>/ навсегда</span></div>
+        <div class="description">
+            Специальный тариф с зашифрованной подпиской. Ключи собраны вручную на надёжных серверах по всему миру.
+        </div>
+        <div class="features">
+            <div class="feature">Зашифрованная подписка crypt5</div>
+            <div class="feature">Серверы в 7 странах</div>
+            <div class="feature">Протоколы: VLESS, Trojan, Hysteria</div>
+            <div class="feature">Оптимально для Happ</div>
+            <div class="feature">Надёжные серверы от CodiNET</div>
+        </div>
+
+        <button class="btn btn-pepe" id="openPepeBtn">🚀 Открыть в Happ</button>
+        <button class="btn btn-copy" id="copyPepeBtn">📋 Скопировать ссылку</button>
+        <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/codinet_pepe.txt" class="btn btn-v2ray" id="v2rayPepeBtn">🔌 Открыть в V2RayTUN</a>
+
+        <div class="manual-link">
+            <div class="link-label">📎 Зашифрованная ссылка (crypt5)</div>
+            <span class="link-value" id="pepeLink">happ://crypt5/fzvd9rrl5hOdi1FBgLsukDjc12YGBW4SOoacIWQFfN6IchGRl+xGw5t/PM9FcbXuMAV8RVae0a8/lkov4xM3H2/zAwHy2scRPLg0fIOPn36mD/4BhRmXpwYuf0H5Ua+I4f1AjXf4oktPrY+ZMt/eOnv50gk=vZInmXDimy0KMnmcUEK9g7XeufuXIBreQ139xdapYfUBTuauJn15xuFOeZU6OG6mRllX3FRMu7NLONvqwBddBOK3mWQrcZrhjjXA6gTNLGa3FRxf6w5xjDvVZO5bqE7oKQPK3wi2b8llAecwienz/5ZTVIPRIXOOIzKsH38Ja7xElKX1Ub/yXNchE3N+rbvBdLtMZHx6CITHhoEGhtssyoi3P5f9RGlTL4z0sQaNOqo1XuY4fgZqNVsMC/X0h05wROF+4k+I4Wuu5fIBwXV4afu4uZG2k8q8Zzie7DUB/mZTc59DEWdCqXdENWP1XEbKf1hmAIGVPCcOeL1Ua85/33mgwvaHBTJQkr4g7wQwRgDXjL9iYv3NxKrnEcivk97fV7arfiQODzF+i4BIWUGTl60T9DMUvY+0PnTse91tzBE6JXm965+XYKbOoL+eL/lt4gJ00pGzg+6AT9/fCGTXDBPds13Xh8X/mn1EmSeRL+0pZzjBScZOt74S9zOA/6Sy1CxDTqxX/hOT8i6fply8CGASIjsC4wkAYSYsPObG5MqFpA7gWGhmHF9ve9C0NFjpPPv8ODsBBOW5ZT6XCGfqpqbYXWCH2tGr/BcASnQrIaS0h/tPTAonOByPctx57SCuL4ImC3VG/zAwfiST5f0tYWquetCNl3AYat6bzVA1foU=ff</span>
+        </div>
+
+        <div class="info">
+            🔹 Нажмите «Открыть в Happ» для автоматического добавления подписки.<br>
+            Если не открывается, скопируйте ссылку вручную.
+        </div>
+    </div>
+
+    <!-- Блок с Telegram -->
+    <div class="telegram-section">
+        <div class="telegram-title">📢 Следите за новостями и обновлениями</div>
+        <div class="telegram-links">
+            <a href="https://t.me/CodiNetVPN" class="telegram-link" target="_blank">
+                📰 Telegram канал
+            </a>
+            <a href="https://t.me/CodiNetVPNbot" class="telegram-link" target="_blank">
+                🤖 Telegram бот
+            </a>
+        </div>
+        <hr>
+        <div style="font-size: 12px; color: #888;">
+            В канале — анонсы новых серверов, тарифов и акции.<br>
+            В боте — автоматическая выдача подписок 24/7.
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <div class="footer">
+        © 2025 CodiNET VPN<br>
+        Бесплатный и открытый доступ к интернету для всех.
+    </div>
+
+    <!-- Уведомление -->
+    <div id="toast" class="toast">✅ Ссылка скопирована!</div>
+
+    <script>
+        const link = document.getElementById('pepeLink').textContent.trim();
+        const toast = document.getElementById('toast');
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2500);
+        }
+
+        // Кнопка "Открыть в Happ"
+        document.getElementById('openPepeBtn').addEventListener('click', function() {
+            try {
+                window.location.href = link;
+                showToast('🚀 Открываем Happ...');
+                setTimeout(() => {
+                    if (!document.hidden) {
+                        showToast('💡 Если не открылось, скопируйте ссылку вручную');
+                    }
+                }, 2500);
+            } catch (e) {
+                navigator.clipboard.writeText(link).then(() => {
+                    showToast('✅ Ссылка скопирована! Вставьте в Happ');
+                }).catch(() => {
+                    showToast('❌ Ошибка, скопируйте ссылку вручную');
+                });
+            }
+        });
+
+        // Кнопка "Скопировать"
+        document.getElementById('copyPepeBtn').addEventListener('click', function() {
+            navigator.clipboard.writeText(link).then(() => {
+                showToast('✅ Ссылка скопирована в буфер!');
+            }).catch(() => {
+                const textarea = document.createElement('textarea');
+                textarea.value = link;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast('✅ Ссылка скопирована!');
+            });
+        });
+
+        // Клик по ссылке в блоке — копирование
+        document.getElementById('pepeLink').addEventListener('click', function() {
+            navigator.clipboard.writeText(link).then(() => {
+                showToast('✅ Ссылка скопирована!');
+            }).catch(() => {
+                const range = document.createRange();
+                range.selectNode(this);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+                showToast('✅ Ссылка скопирована!');
+            });
+        });
+
+        // Кнопка V2RayTUN — показывает уведомление
+        document.getElementById('v2rayPepeBtn')?.addEventListener('click', function(e) {
+            // Не отменяем переход, просто показываем уведомление
+            setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 300);
+        });
+    </script>
+
+</body>
+</html>
