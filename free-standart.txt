@@ -5,41 +5,23 @@
 #profile-web-page-url: https://t.me/CodiNetVPN
 #support-url: https://t.me/CodiNetVPNbot
 
-========== 🇺🇸 США ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@213.108.3.228:12303?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=dl.google.com&pbk=djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ&sid=4646ff0a2c0bafbb&fp=chrome#🇺🇸 США | TCP | Reality
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@213.108.3.228:17833?type=httpupgrade&security=tls&encryption=none&sni=gate-v1.not-a-projects.xyz&host=dl.google.com&path=%2F#🇺🇸 США | HTTPUpgrade | TLS
-trojan://UtfpGB9Jygl2m1yYn_-ghyZoiRSEbibg@213.108.3.228:30452#🇺🇸 США | Trojan | HTTPUpgrade | TLS
-hysteria2://--0b-SQmVjHqDcpfoDb1qedtnjxPx3IK@213.108.3.228:43327?sni=gate-v1.not-a-projects.xyz&alpn=h3#🇺🇸 США | Hysteria | 🎮 Игровой
-
-========== 🇫🇮 Финляндия ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@fi-1-gatev4.dedicated.cdnnow.xyz:12303?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=dl.google.com&pbk=djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ&sid=4646ff0a2c0bafbb&fp=chrome#🇫🇮 Финляндия | TCP | Reality
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@fi-1-gatev4.dedicated.cdnnow.xyz:17833?type=httpupgrade&security=tls&encryption=none&sni=gate-v1.not-a-projects.xyz&host=dl.google.com&path=%2F#🇫🇮 Финляндия | HTTPUpgrade | TLS
-trojan://UtfpGB9Jygl2m1yYn_-ghyZoiRSEbibg@fi-1-gatev4.dedicated.cdnnow.xyz:30452#🇫🇮 Финляндия | Trojan | HTTPUpgrade | TLS
-hysteria2://--0b-SQmVjHqDcpfoDb1qedtnjxPx3IK@fi-1-gatev4.dedicated.cdnnow.xyz:43327?sni=gate-v1.not-a-projects.xyz&alpn=h3#🇫🇮 Финляндия | Hysteria | 🎮 Игровой
+========== 🇪🇺 Европа ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:8443?encryption=none&type=xhttp&security=reality&sni=de-two.quiet-rogue.site&pbk=QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0&sid=00a02855ba568c29&fp=firefox&path=%2Fapi%2Fv3%2Fsync%2Fde&host=de-two.quiet-rogue.site#🇪🇺 Европа | Невидимый VPN
 
 ========== 🇩🇪 Германия ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@2.27.59.11:12303?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=dl.google.com&pbk=djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ&sid=4646ff0a2c0bafbb&fp=chrome#🇩🇪 Германия | TCP | Reality
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@2.27.59.11:17833?type=httpupgrade&security=tls&encryption=none&sni=gate-v1.not-a-projects.xyz&host=dl.google.com&path=%2F#🇩🇪 Германия | HTTPUpgrade | TLS
-trojan://UtfpGB9Jygl2m1yYn_-ghyZoiRSEbibg@2.27.59.11:30452#🇩🇪 Германия | Trojan | HTTPUpgrade | TLS
-hysteria2://--0b-SQmVjHqDcpfoDb1qedtnjxPx3IK@2.27.59.11:43327?sni=gate-v1.not-a-projects.xyz&alpn=h3#🇩🇪 Германия | Hysteria | 🎮 Игровой
-
-========== 🇵🇱 Польша ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@pl-1-gatev0.dedicated.cdnnow.xyz:12303?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=dl.google.com&pbk=djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ&sid=4646ff0a2c0bafbb&fp=chrome#🇵🇱 Польша | TCP | Reality
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@pl-1-gatev0.dedicated.cdnnow.xyz:17833?type=httpupgrade&security=tls&encryption=none&sni=gate-v1.not-a-projects.xyz&host=dl.google.com&path=%2F#🇵🇱 Польша | HTTPUpgrade | TLS
-trojan://UtfpGB9Jygl2m1yYn_-ghyZoiRSEbibg@pl-1-gatev0.dedicated.cdnnow.xyz:30452#🇵🇱 Польша | Trojan | HTTPUpgrade | TLS
-hysteria2://--0b-SQmVjHqDcpfoDb1qedtnjxPx3IK@pl-1-gatev0.dedicated.cdnnow.xyz:43327?sni=gate-v1.not-a-projects.xyz&alpn=h3#🇵🇱 Польша | Hysteria | TLS
-
-========== 🇪🇪 Эстония ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@ee-2-gatev1.dedicated.cdnnow.xyz:12303?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=dl.google.com&pbk=djNTwe-D7XWCrj4sG3b0Kz2tSuJ7epWKoQYHIv1AtzQ&sid=4646ff0a2c0bafbb&fp=chrome#🇪🇪 Эстония | TCP | Reality
-
-========== 🇪🇺 Европа (LTE) ==========
-vless://7b708924-8ec9-473f-be65-af41ad5bb48a@ntsrc.xyz:443?type=xhttp&security=tls&encryption=none&sni=ntsrc.xyz&alpn=h2&fp=firefox&host=ntsrc.xyz&path=%2Fapi%2Fstream.php%2F&mode=packet-up#🇪🇺 Европа | XHTTP | Безлимит
-
-========== 🇩🇪 Германия (Рекомендуемый) ==========
-vless://25650b6f-8bcf-4153-a84b-0b5b666bd22c@fast_s23.screw.page:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=fast_s23.screw.page&fp=firefox&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#🇩🇪 Германия | Рекомендуемый | TLS
-
-========== 🇺🇸 США (Рекомендуемый) ==========
-vless://25650b6f-8bcf-4153-a84b-0b5b666bd22c@testusa11.hutsharing.com:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=testusa11.hutsharing.com&fp=chrome&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#🇺🇸 США | Рекомендуемый | TLS
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:8443?encryption=none&type=xhttp&security=reality&sni=de-two.quiet-rogue.site&pbk=QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0&sid=00a02855ba568c29&fp=firefox&path=%2Fapi%2Fv3%2Fsync%2Fde&host=de-two.quiet-rogue.site#🇩🇪 Германия | Frankfurt
 
 ========== 🇳🇱 Нидерланды ==========
-vless://25650b6f-8bcf-4153-a84b-0b5b666bd22c@nl10.roscomsosal.de:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=tls&sni=nl10.roscomsosal.de&fp=qq&fm=%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%223-5%22%2C%226-8%22%2C%2210-20%22%5D%2C%22delays%22%3A%5B%2210-20%22%5D%2C%22maxSplit%22%3A%223-6%22%7D%7D#🇳🇱 Нидерланды | TLS
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=nl-one.quiet-rogue.site&pbk=UvJqmTGvadeK94_38ncycxTRqU4lmsjhDjJBuL0CQSA&sid=c71af684feb2fef4&fp=firefox#🇳🇱 Нидерланды | Amsterdam
+
+========== 🇫🇮 Финляндия ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2053?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=fi-one.quiet-rogue.site&pbk=AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI&sid=beff3ff061a64cfd&fp=firefox#🇫🇮 Финляндия
+
+========== 🇸🇪 Швеция ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2083?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=swe-one.quiet-rogue.site&pbk=40eDnye2AHCQqgM2_ikKzRayZ4Vlu4rnnkHmLmNalQc&sid=32a37218722f0081&fp=edge#🇸🇪 Швеция
+
+========== 🇮🇹 Италия ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2096?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=it-one.quiet-rogue.site&pbk=pWPvxPIVtdzgaL0cdFZ73qn1FihjKDZ7TE55wg57Vl8&sid=9b43ece6010612b0&fp=edge#🇮🇹 Италия
+
+========== 🇷🇺 Россия (Белые списки) ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@cdn-ya.quiet-rogue.site:443?encryption=none&type=xhttp&security=tls&sni=cdn-ya.quiet-rogue.site&path=%2Fapi%2Fv4%2Fmedia%2Fsession%2Fpoll%2Fauto&host=cdn-ya.quiet-rogue.site#🇷🇺 Россия | Белые списки | Автовыбор
