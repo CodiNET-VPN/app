@@ -5,6 +5,9 @@
 #profile-web-page-url: https://t.me/CodiNetVPN
 #support-url: https://t.me/CodiNetVPNbot
 
+vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@95.129.236.252:443?encryption=none&path=%2Fapi%2Fv2%2Fcamera%2Fevents%2F8f4c2d&security=tls&sni=azs.benz.ink&type=ws#LTE Все операторы 🇷🇺
+vless://00790c59-b1ef-402f-8305-20b938bfb7ca@178.248.236.0:56443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&pbk=l4a04BlcqPrdTrvx6uWjdSUr6ctSY6OfRvECpS4oR3E&fp=qq&sni=rutube.ru&sid=8f3c1a7d5be204c9&spx=%2F#LTE Beeline MegafonYota Tele2 🇷🇺
+
 ========== 🇸🇪 Швеция ==========
 vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@87.120.196.88:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=-jKb8W3EZEw-R1kwqL3j0JZVA9ukoSvJrWyHThz-glc&sid=a1b2c3d4&type=tcp#🇸🇪 Швеция | Биза
 
