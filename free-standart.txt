@@ -5,4 +5,22 @@
 #profile-web-page-url: https://t.me/CodiNetVPN
 #support-url: https://t.me/CodiNetVPNbot
 
-dmxlc3M6Ly8wZjJkYzRhZi05NTFmLTQ2OTAtOTIyZS0wN2M2ZThiYWIyNmFAMTc4LjI1My41NS44OTo4NDQzP2VuY3J5cHRpb249bm9uZSZ0eXBlPXhodHRwJnNlY3VyaXR5PXJlYWxpdHkmc25pPWRlLXR3by5xdWlldC1yb2d1ZS5zaXRlJnBiaz1RTUpSR1RxWlJicGVMcElBZHZuNmRoZnR1enJwd2J0d21WRzJzNUl1dVUwJnNpZD0wMGEwMjg1NWJhNTY4YzI5JmZwPWZpcmVmb3gmcGF0aD0lMkZhcGklMkZ2MyUyRnN5bmMlMkZkZSZob3N0PWRlLXR3by5xdWlldC1yb2d1ZS5zaXRlI/Cfh6rwn4e6INCV0LLRgNC+0L/QsCB8INCd0LXQstC40LTQuNC80YvQuSBWUE4Kdmxlc3M6Ly8wZjJkYzRhZi05NTFmLTQ2OTAtOTIyZS0wN2M2ZThiYWIyNmFAMTc4LjI1My41NS44OTo4NDQzP2VuY3J5cHRpb249bm9uZSZ0eXBlPXhodHRwJnNlY3VyaXR5PXJlYWxpdHkmc25pPWRlLXR3by5xdWlldC1yb2d1ZS5zaXRlJnBiaz1RTUpSR1RxWlJicGVMcElBZHZuNmRoZnR1enJwd2J0d21WRzJzNUl1dVUwJnNpZD0wMGEwMjg1NWJhNTY4YzI5JmZwPWZpcmVmb3gmcGF0aD0lMkZhcGklMkZ2MyUyRnN5bmMlMkZkZSZob3N0PWRlLXR3by5xdWlldC1yb2d1ZS5zaXRlI/Cfh6nwn4eqINCT0LXRgNC80LDQvdC40Y8gfCBGcmFua2Z1cnQKdmxlc3M6Ly8wZjJkYzRhZi05NTFmLTQ2OTAtOTIyZS0wN2M2ZThiYWIyNmFAMTc4LjI1My41NS44OTo0NDM/ZW5jcnlwdGlvbj1ub25lJnR5cGU9dGNwJnNlY3VyaXR5PXJlYWxpdHkmZmxvdz14dGxzLXJwcngtdmlzaW9uJnNuaT1ubC1vbmUucXVpZXQtcm9ndWUuc2l0ZSZwYms9VXZKcW1UR3ZhZGVLOTRfMzhuY3ljeFRScVU0bG1zamhEakpCdUwwQ1FTQSZzaWQ9YzcxYWY2ODRmZWIyZmVmNCZmcD1maXJlZm94I/Cfh7Pwn4exINCd0LjQtNC10YDQu9Cw0L3QtNGLIHwgQW1zdGVyZGFtCnZsZXNzOi8vMGYyZGM0YWYtOTUxZi00NjkwLTkyMmUtMDdjNmU4YmFiMjZhQDE3OC4yNTMuNTUuODk6MjA1Mz9lbmNyeXB0aW9uPW5vbmUmdHlwZT10Y3Amc2VjdXJpdHk9cmVhbGl0eSZmbG93PXh0bHMtcnByeC12aXNpb24mc25pPWZpLW9uZS5xdWlldC1yb2d1ZS5zaXRlJnBiaz1BS1VRTy1mS3NEMTlGRkJ4TnE1WFRGQ1JYV0RaZmVzNHpKalJJTlkxS1VJJnNpZD1iZWZmM2ZmMDYxYTY0Y2ZkJmZwPWZpcmVmb3gKdmxlc3M6Ly8wZjJkYzRhZi05NTFmLTQ2OTAtOTIyZS0wN2M2ZThiYWIyNmFAMTc4LjI1My41NS44OToyMDgzP2VuY3J5cHRpb249bm9uZSZ0eXBlPXRjcCZzZWN1cml0eT1yZWFsaXR5JmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZzbmk9c3dlLW9uZS5xdWlldC1yb2d1ZS5zaXRlJnBiaz00MGVEbnllMkFIQ1FxZ00yX2lrS3pSYXlaNFZsdTRybm5rSG1MbU5hbFFjJnNpZD0zMmEzNzIxODcyMmYwMDgxJmZwPWVkZ2Uj8J+HuPCfh6og0KjQstC10YbQuNGPCnZsZXNzOi8vMGYyZGM0YWYtOTUxZi00NjkwLTkyMmUtMDdjNmU4YmFiMjZhQDE3OC4yNTMuNTUuODk6MjA5Nj9lbmNyeXB0aW9uPW5vbmUmdHlwZT10Y3Amc2VjdXJpdHk9cmVhbGl0eSZmbG93PXh0bHMtcnByeC12aXNpb24mc25pPWl0LW9uZS5xdWlldC1yb2d1ZS5zaXRlJnBiaz1wV1B2eFBJVnRkemdhTDBjZEZaNzNxbjFGaWhqS0RaN1RFNTV3ZzU3Vmw4JnNpZD05YjQzZWNlNjAxMDYxMmIwJmZwPWVkZ2Uj8J+HrvCfh7kg0JjRgtCw0LvQuNGPCnZsZXNzOi8vMGYyZGM0YWYtOTUxZi00NjkwLTkyMmUtMDdjNmU4YmFiMjZhQGNkbi15YS5xdWlldC1yb2d1ZS5zaXRlOjQ0Mz9lbmNyeXB0aW9uPW5vbmUmdHlwZT14aHR0cCZzZWN1cml0eT10bHMmc25pPWNkbi15YS5xdWlldC1yb2d1ZS5zaXRlJnBhdGg9JTJGYXBpJTJGdjQlMkZtZWRpYSUyRnNlc3Npb24lMkZwb2xsJTJGYXV0byZob3N0PWNkbi15YS5xdWlldC1yb2d1ZS5zaXRlI/Cfh7fwn4e6INCg0L7RgdGB0LjRjyB8INCR0LXQu9GL0LUg0YHQv9C40YHQutC4IHwg0JDQstGC0L7QstGL0LHQvtGA
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:8443?encryption=none&type=xhttp&security=reality&sni=de-two.quiet-rogue.site&pbk=QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0&sid=00a02855ba568c29&fp=firefox&path=%2Fapi%2Fv3%2Fsync%2Fde&host=de-two.quiet-rogue.site#🇪🇺 Европа | Невидимый VPN
+
+========== 🇩🇪 Германия ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:8443?encryption=none&type=xhttp&security=reality&sni=de-two.quiet-rogue.site&pbk=QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0&sid=00a02855ba568c29&fp=firefox&path=%2Fapi%2Fv3%2Fsync%2Fde&host=de-two.quiet-rogue.site#🇩🇪 Германия | Frankfurt
+
+========== 🇳🇱 Нидерланды ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=nl-one.quiet-rogue.site&pbk=UvJqmTGvadeK94_38ncycxTRqU4lmsjhDjJBuL0CQSA&sid=c71af684feb2fef4&fp=firefox#🇳🇱 Нидерланды | Amsterdam
+
+========== 🇫🇮 Финляндия ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2053?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=fi-one.quiet-rogue.site&pbk=AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI&sid=beff3ff061a64cfd&fp=firefox#🇫🇮 Финляндия
+
+========== 🇸🇪 Швеция ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2083?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=swe-one.quiet-rogue.site&pbk=40eDnye2AHCQqgM2_ikKzRayZ4Vlu4rnnkHmLmNalQc&sid=32a37218722f0081&fp=edge#🇸🇪 Швеция
+
+========== 🇮🇹 Италия ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@178.253.55.89:2096?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=it-one.quiet-rogue.site&pbk=pWPvxPIVtdzgaL0cdFZ73qn1FihjKDZ7TE55wg57Vl8&sid=9b43ece6010612b0&fp=edge#🇮🇹 Италия
+
+========== 🇷🇺 Россия (Белые списки) ==========
+vless://0f2dc4af-951f-4690-922e-07c6e8bab26a@cdn-ya.quiet-rogue.site:443?encryption=none&type=xhttp&security=tls&sni=cdn-ya.quiet-rogue.site&path=%2Fapi%2Fv4%2Fmedia%2Fsession%2Fpoll%2Fauto&host=cdn-ya.quiet-rogue.site#🇷🇺 Россия | Белые списки | Автовыбор
