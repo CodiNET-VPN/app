@@ -59,10 +59,12 @@
             max-width: 500px;
             width: 100%;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .tab {
             flex: 1;
+            min-width: 80px;
             background: white;
             border: 1px solid #e0e0e0;
             border-radius: 16px;
@@ -98,6 +100,27 @@
             margin-top: 4px;
         }
 
+        .tab-premium .tab-title {
+            color: #7b1fa2;
+        }
+
+        .tab-premium.active {
+            background: linear-gradient(135deg, #4a148c, #7b1fa2);
+            border-color: #7b1fa2;
+        }
+
+        .tab-premium.active .tab-title {
+            color: white;
+        }
+
+        .tab-premium .tab-price {
+            color: #9c27b0;
+        }
+
+        .tab-premium.active .tab-price {
+            color: #ce93d8;
+        }
+
         /* Основная карточка */
         .card {
             background: white;
@@ -126,6 +149,16 @@
             border-radius: 20px;
             display: inline-block;
             margin-bottom: 20px;
+        }
+
+        .badge-pepe {
+            background: #f3e5f5;
+            color: #6a1b9a;
+        }
+
+        .badge-premium {
+            background: #fff3e0;
+            color: #e65100;
         }
 
         .price {
@@ -170,6 +203,14 @@
             font-size: 16px;
         }
 
+        .feature-premium::before {
+            color: #e65100;
+        }
+
+        .feature-pepe::before {
+            color: #7b1fa2;
+        }
+
         .btn {
             display: block;
             width: 100%;
@@ -183,6 +224,10 @@
             cursor: pointer;
             transition: all 0.2s;
             margin-bottom: 12px;
+        }
+
+        .btn:last-child {
+            margin-bottom: 0;
         }
 
         .btn-copy {
@@ -210,6 +255,62 @@
 
         .btn-v2ray:hover {
             background: #455a64;
+        }
+
+        .btn-pepe {
+            background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+            color: white;
+        }
+
+        .btn-pepe:hover {
+            background: linear-gradient(135deg, #4a148c, #7b1fa2);
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, #e65100, #f57c00);
+            color: white;
+        }
+
+        .btn-premium:hover {
+            background: linear-gradient(135deg, #bf360c, #ef6c00);
+        }
+
+        .manual-link {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .manual-link .link-label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .manual-link .link-value {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            color: #555;
+            margin-top: 6px;
+            display: block;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .manual-link .link-value:hover {
+            color: #7b1fa2;
+        }
+
+        .info {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
         }
 
         /* Блок с Telegram */
@@ -266,6 +367,15 @@
             padding: 16px;
         }
 
+        .footer a {
+            color: #7b1fa2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
         .toast {
             position: fixed;
             bottom: 30px;
@@ -296,6 +406,50 @@
             border-top: 1px solid #eee;
         }
 
+        /* Блок для покупки */
+        .purchase-info {
+            background: #fff8e1;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ffe0b2;
+        }
+
+        .purchase-info .price-big {
+            font-size: 28px;
+            font-weight: 700;
+            color: #e65100;
+        }
+
+        .purchase-info .price-big span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #888;
+        }
+
+        .purchase-info p {
+            font-size: 13px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .purchase-info .contact {
+            display: inline-block;
+            margin-top: 10px;
+            background: #e65100;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .purchase-info .contact:hover {
+            background: #bf360c;
+        }
+
         @media (max-width: 500px) {
             .toast {
                 font-size: 12px;
@@ -311,6 +465,16 @@
             .telegram-link {
                 width: 100%;
                 justify-content: center;
+            }
+            .tabs {
+                gap: 8px;
+            }
+            .tab {
+                padding: 10px 8px;
+                min-width: 60px;
+            }
+            .tab-title {
+                font-size: 13px;
             }
         }
     </style>
@@ -330,21 +494,21 @@
     <div class="tabs">
         <div class="tab active" data-tab="standard">
             <div class="tab-title">🌟 Стандартный</div>
-            <div class="tab-price">Надёжные серверы</div>
+            <div class="tab-price">Бесплатно</div>
         </div>
-        <div class="tab" data-tab="daily">
-            <div class="tab-title">📆 Daily</div>
-            <div class="tab-price">Ежедневное обновление</div>
+        <div class="tab tab-premium" data-tab="premium">
+            <div class="tab-title">⭐ Премиум</div>
+            <div class="tab-price">30 ₽ / мес</div>
         </div>
-        <div class="tab" data-tab="lte">
-            <div class="tab-title">📡 Обход LTE</div>
-            <div class="tab-price">Для мобильных сетей</div>
+        <div class="tab" data-tab="pepe">
+            <div class="tab-title">🐸 Pepe</div>
+            <div class="tab-price">Зашифрованная</div>
         </div>
     </div>
 
     <!-- КАРТОЧКА СТАНДАРТНОГО ТАРИФА -->
     <div class="card" id="standardCard">
-        <div class="badge">⭐ Лучший тариф!</div>
+        <div class="badge">⭐ Бесплатный тариф!</div>
         <h1>Стандартный</h1>
         <div class="price">0 ₽ <span>/ месяц</span></div>
         <div class="description">
@@ -353,8 +517,8 @@
         <div class="features">
             <div class="feature">Безлимитный трафик</div>
             <div class="feature">До 50 Мбит/с</div>
-            <div class="feature">9+ серверов в США, Германии, Франции, Канаде и на Сейшелах</div>
-            <div class="feature">Поддержка VLESS + WebSocket</div>
+            <div class="feature">6+ серверов в Европе</div>
+            <div class="feature">Поддержка VLESS + Reality</div>
             <div class="feature">Действует до 31.12.2026</div>
         </div>
 
@@ -362,68 +526,78 @@
         <a href="happ://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/free-standart.txt" class="btn btn-happ" id="happStandardBtn">🚀 Открыть в Happ</a>
         <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/free-standart.txt" class="btn btn-v2ray" id="v2rayStandardBtn">🔌 Открыть в V2RayTUN</a>
 
-        <div class="manual-link" style="background: #f9f9f9; padding: 12px; border-radius: 12px; margin-top: 20px; font-size: 12px; text-align: center; word-break: break-all;">
-            📌 <strong>Подписка:</strong><br>
-            <span>https://aslan2280.github.io/CodiNET-VPN/free-standart.txt</span>
+        <div class="manual-link">
+            <div class="link-label">📎 Ссылка для импорта</div>
+            <span class="link-value" id="standardLink">https://aslan2280.github.io/CodiNET-VPN/free-standart.txt</span>
         </div>
-        <div class="info" style="font-size: 12px; color: #888; text-align: center; margin-top: 20px;">
+        <div class="info">
             🔹 <strong>Инструкция:</strong> Нажмите «Скопировать» → Откройте Happ/V2RayTUN → «+» → «Импорт по ссылке» → Вставьте.
         </div>
     </div>
 
-    <!-- КАРТОЧКА DAILY ТАРИФА -->
-    <div class="card" id="dailyCard" style="display: none;">
-        <div class="badge">🔄 Обновляется каждый день</div>
-        <h1>📆 Daily</h1>
-        <div class="price">0 ₽ <span>/ день</span></div>
+    <!-- КАРТОЧКА ПРЕМИУМ ТАРИФА -->
+    <div class="card" id="premiumCard" style="display: none;">
+        <div class="badge badge-premium">👑 Премиум доступ</div>
+        <h1>⭐ Премиум</h1>
+        <div class="price">30 ₽ <span>/ месяц</span></div>
         <div class="description">
-            Экспериментальный тариф со «свежими» ключами. Подписка автоматически обновляется, когда вы находите и публикуете новые ключи.
+            Расширенный тариф с большим количеством серверов и приоритетным обслуживанием. Идеально для стриминга и игр.
         </div>
         <div class="features">
-            <div class="feature">Ежедневные свежие ключи</div>
-            <div class="feature">Актуальные серверы</div>
-            <div class="feature">Разные страны и протоколы</div>
-            <div class="feature">Автообновление в клиенте</div>
+            <div class="feature feature-premium">Безлимитный трафик</div>
+            <div class="feature feature-premium">До 100 Мбит/с</div>
+            <div class="feature feature-premium">21+ сервер в 6 странах</div>
+            <div class="feature feature-premium">Протоколы: VLESS + Reality / XHTTP</div>
+            <div class="feature feature-premium">Действует до 31.12.2026</div>
+            <div class="feature feature-premium">Приоритетная поддержка</div>
+            <div class="feature feature-premium">📱 1 устройство</div>
         </div>
 
-        <button class="btn btn-copy" id="copyDailyBtn">📋 Скопировать подписку</button>
-        <a href="happ://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/free-daily.txt" class="btn btn-happ" id="happDailyBtn">🚀 Открыть в Happ</a>
-        <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/free-daily.txt" class="btn btn-v2ray" id="v2rayDailyBtn">🔌 Открыть в V2RayTUN</a>
-
-        <div class="manual-link" style="background: #f9f9f9; padding: 12px; border-radius: 12px; margin-top: 20px; font-size: 12px; text-align: center; word-break: break-all;">
-            📌 <strong>Подписка:</strong><br>
-            <span>https://aslan2280.github.io/CodiNET-VPN/free-daily.txt</span>
+        <div class="purchase-info">
+            <div class="price-big">30 ₽ <span>/ месяц</span></div>
+            <p>Для получения премиум-подписки напишите в Telegram:</p>
+            <a href="https://t.me/CodiNetVPNbot" class="contact" target="_blank">🤖 Написать боту</a>
         </div>
-        <div class="info" style="font-size: 12px; color: #888; text-align: center; margin-top: 20px;">
-            🔹 <strong>Инструкция:</strong> Нажмите «Скопировать» → Откройте Happ/V2RayTUN → «+» → «Импорт по ссылке» → Вставьте. Подписка будет обновляться сама.
+
+        <button class="btn btn-premium" id="copyPremiumBtn">📋 Скопировать подписку</button>
+        <a href="happ://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt" class="btn btn-happ" id="happPremiumBtn">🚀 Открыть в Happ</a>
+        <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt" class="btn btn-v2ray" id="v2rayPremiumBtn">🔌 Открыть в V2RayTUN</a>
+
+        <div class="manual-link">
+            <div class="link-label">📎 Ссылка для импорта</div>
+            <span class="link-value" id="premiumLink">https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt</span>
+        </div>
+        <div class="info">
+            🔹 <strong>Инструкция:</strong> После оплаты вы получите ссылку. Вставьте её в Happ или V2RayTUN.
         </div>
     </div>
 
-    <!-- КАРТОЧКА LTE ТАРИФА -->
-    <div class="card" id="lteCard" style="display: none;">
-        <div class="badge">📡 Нет LTE!</div>
-        <h1>📡 Обход LTE</h1>
-        <div class="price">0 ₽ <span>/ месяц</span></div>
+    <!-- КАРТОЧКА PEPE ТАРИФА -->
+    <div class="card" id="pepeCard" style="display: none;">
+        <div class="badge badge-pepe">🐸 Зашифрованная подписка</div>
+        <h1>🐸 Pepe</h1>
+        <div class="price">0 ₽ <span>/ навсегда</span></div>
         <div class="description">
-            Специальный тариф для обхода блокировок в мобильных сетях (LTE, 4G, 5G). Работает там, где обычные VPN бессильны.
+            Специальный тариф с зашифрованной подпиской. Ключи собраны вручную на надёжных серверах по всему миру.
         </div>
         <div class="features">
-            <div class="feature">Реальные IP-адреса (не Cloudflare)</div>
-            <div class="feature">15+ серверов в Европе</div>
-            <div class="feature">Безлимитный трафик</div>
-            <div class="feature">Протоколы: VLESS + gRPC / Reality</div>
+            <div class="feature feature-pepe">Зашифрованная подписка crypt5</div>
+            <div class="feature feature-pepe">Серверы в 7 странах</div>
+            <div class="feature feature-pepe">Протоколы: VLESS, Trojan, Hysteria</div>
+            <div class="feature feature-pepe">Оптимально для Happ</div>
+            <div class="feature feature-pepe">Надёжные серверы от CodiNET</div>
         </div>
 
-        <button class="btn btn-copy" id="copyLteBtn">📋 Скопировать подписку</button>
-        <a href="happ://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/FreeWhite-lists.txt" class="btn btn-happ" id="happLteBtn">🚀 Открыть в Happ</a>
-        <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/FreeWhite-lists.txt" class="btn btn-v2ray" id="v2rayLteBtn">🔌 Открыть в V2RayTUN</a>
+        <button class="btn btn-pepe" id="openPepeBtn">🚀 Открыть в Happ</button>
+        <button class="btn btn-copy" id="copyPepeBtn">📋 Скопировать ссылку</button>
 
-        <div class="manual-link" style="background: #f9f9f9; padding: 12px; border-radius: 12px; margin-top: 20px; font-size: 12px; text-align: center; word-break: break-all;">
-            📌 <strong>Подписка:</strong><br>
-            <span>https://aslan2280.github.io/CodiNET-VPN/FreeWhite-lists.txt</span>
+        <div class="manual-link">
+            <div class="link-label">📎 Зашифрованная ссылка (crypt5)</div>
+            <span class="link-value" id="pepeLink">happ://crypt5/fzvd9rrl5hOdi1FBgLsukDjc12YGBW4SOoacIWQFfN6IchGRl+xGw5t/PM9FcbXuMAV8RVae0a8/lkov4xM3H2/zAwHy2scRPLg0fIOPn36mD/4BhRmXpwYuf0H5Ua+I4f1AjXf4oktPrY+ZMt/eOnv50gk=vZInmXDimy0KMnmcUEK9g7XeufuXIBreQ139xdapYfUBTuauJn15xuFOeZU6OG6mRllX3FRMu7NLONvqwBddBOK3mWQrcZrhjjXA6gTNLGa3FRxf6w5xjDvVZO5bqE7oKQPK3wi2b8llAecwienz/5ZTVIPRIXOOIzKsH38Ja7xElKX1Ub/yXNchE3N+rbvBdLtMZHx6CITHhoEGhtssyoi3P5f9RGlTL4z0sQaNOqo1XuY4fgZqNVsMC/X0h05wROF+4k+I4Wuu5fIBwXV4afu4uZG2k8q8Zzie7DUB/mZTc59DEWdCqXdENWP1XEbKf1hmAIGVPCcOeL1Ua85/33mgwvaHBTJQkr4g7wQwRgDXjL9iYv3NxKrnEcivk97fV7arfiQODzF+i4BIWUGTl60T9DMUvY+0PnTse91tzBE6JXm965+XYKbOoL+eL/lt4gJ00pGzg+6AT9/fCGTXDBPds13Xh8X/mn1EmSeRL+0pZzjBScZOt74S9zOA/6Sy1CxDTqxX/hOT8i6fply8CGASIjsC4wkAYSYsPObG5MqFpA7gWGhmHF9ve9C0NFjpPPv8ODsBBOW5ZT6XCGfqpqbYXWCH2tGr/BcASnQrIaS0h/tPTAonOByPctx57SCuL4ImC3VG/zAwfiST5f0tYWquetCNl3AYat6bzVA1foU=ff</span>
         </div>
-        <div class="info" style="font-size: 12px; color: #888; text-align: center; margin-top: 20px;">
-            🔹 <strong>Инструкция:</strong> Нажмите «Скопировать» → Откройте Happ/V2RayTUN → «+» → «Импорт по ссылке» → Вставьте.
+
+        <div class="info">
+            🔹 <strong>Инструкция:</strong> Нажмите «Открыть в Happ» для автоматического добавления подписки. Если не открывается, скопируйте ссылку вручную.
         </div>
     </div>
 
@@ -452,20 +626,21 @@
     </div>
 
     <!-- Уведомление -->
-    <div id="toast" class="toast">✅ Подписка скопирована</div>
+    <div id="toast" class="toast">✅ Ссылка скопирована!</div>
 
     <script>
         // URL подписок
         const urls = {
             standard: "https://aslan2280.github.io/CodiNET-VPN/free-standart.txt",
-            daily: "https://aslan2280.github.io/CodiNET-VPN/free-daily.txt",
-            lte: "https://aslan2280.github.io/CodiNET-VPN/FreeWhite-lists.txt"
+            premium: "https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt",
         };
-        
+
+        const pepeLink = "happ://crypt5/fzvd9rrl5hOdi1FBgLsukDjc12YGBW4SOoacIWQFfN6IchGRl+xGw5t/PM9FcbXuMAV8RVae0a8/lkov4xM3H2/zAwHy2scRPLg0fIOPn36mD/4BhRmXpwYuf0H5Ua+I4f1AjXf4oktPrY+ZMt/eOnv50gk=vZInmXDimy0KMnmcUEK9g7XeufuXIBreQ139xdapYfUBTuauJn15xuFOeZU6OG6mRllX3FRMu7NLONvqwBddBOK3mWQrcZrhjjXA6gTNLGa3FRxf6w5xjDvVZO5bqE7oKQPK3wi2b8llAecwienz/5ZTVIPRIXOOIzKsH38Ja7xElKX1Ub/yXNchE3N+rbvBdLtMZHx6CITHhoEGhtssyoi3P5f9RGlTL4z0sQaNOqo1XuY4fgZqNVsMC/X0h05wROF+4k+I4Wuu5fIBwXV4afu4uZG2k8q8Zzie7DUB/mZTc59DEWdCqXdENWP1XEbKf1hmAIGVPCcOeL1Ua85/33mgwvaHBTJQkr4g7wQwRgDXjL9iYv3NxKrnEcivk97fV7arfiQODzF+i4BIWUGTl60T9DMUvY+0PnTse91tzBE6JXm965+XYKbOoL+eL/lt4gJ00pGzg+6AT9/fCGTXDBPds13Xh8X/mn1EmSeRL+0pZzjBScZOt74S9zOA/6Sy1CxDTqxX/hOT8i6fply8CGASIjsC4wkAYSYsPObG5MqFpA7gWGhmHF9ve9C0NFjpPPv8ODsBBOW5ZT6XCGfqpqbYXWCH2tGr/BcASnQrIaS0h/tPTAonOByPctx57SCuL4ImC3VG/zAwfiST5f0tYWquetCNl3AYat6bzVA1foU=ff";
+
         // Элементы карточек
         const standardCard = document.getElementById('standardCard');
-        const dailyCard = document.getElementById('dailyCard');
-        const lteCard = document.getElementById('lteCard');
+        const premiumCard = document.getElementById('premiumCard');
+        const pepeCard = document.getElementById('pepeCard');
         const tabs = document.querySelectorAll('.tab');
         const toast = document.getElementById('toast');
 
@@ -477,11 +652,10 @@
             }, 2500);
         }
 
-        async function copyToClipboard(text, planName) {
-            try {
-                await navigator.clipboard.writeText(text);
+        function copyToClipboard(text, planName) {
+            navigator.clipboard.writeText(text).then(() => {
                 showToast(`✅ Подписка ${planName} скопирована!`);
-            } catch (err) {
+            }).catch(() => {
                 const textarea = document.createElement('textarea');
                 textarea.value = text;
                 document.body.appendChild(textarea);
@@ -489,29 +663,27 @@
                 document.execCommand('copy');
                 document.body.removeChild(textarea);
                 showToast(`✅ Подписка ${planName} скопирована!`);
-            }
+            });
         }
 
         // Переключение между тарифами
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const tabName = tab.getAttribute('data-tab');
-                
-                // Обновить активный таб
+
                 tabs.forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
-                
-                // Показать нужную карточку
+
                 standardCard.style.display = 'none';
-                dailyCard.style.display = 'none';
-                lteCard.style.display = 'none';
-                
+                premiumCard.style.display = 'none';
+                pepeCard.style.display = 'none';
+
                 if (tabName === 'standard') {
                     standardCard.style.display = 'block';
-                } else if (tabName === 'daily') {
-                    dailyCard.style.display = 'block';
-                } else if (tabName === 'lte') {
-                    lteCard.style.display = 'block';
+                } else if (tabName === 'premium') {
+                    premiumCard.style.display = 'block';
+                } else if (tabName === 'pepe') {
+                    pepeCard.style.display = 'block';
                 }
             });
         });
@@ -520,16 +692,31 @@
         document.getElementById('copyStandardBtn').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандартный»'));
         document.getElementById('happStandardBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
         document.getElementById('v2rayStandardBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
+        document.getElementById('standardLink').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандартный»'));
 
-        // --- Daily Plan Buttons ---
-        document.getElementById('copyDailyBtn').addEventListener('click', () => copyToClipboard(urls.daily, '«Daily»'));
-        document.getElementById('happDailyBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
-        document.getElementById('v2rayDailyBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
+        // --- Premium Plan Buttons ---
+        document.getElementById('copyPremiumBtn').addEventListener('click', () => copyToClipboard(urls.premium, '«Премиум»'));
+        document.getElementById('happPremiumBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
+        document.getElementById('v2rayPremiumBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
+        document.getElementById('premiumLink').addEventListener('click', () => copyToClipboard(urls.premium, '«Премиум»'));
 
-        // --- LTE Plan Buttons ---
-        document.getElementById('copyLteBtn').addEventListener('click', () => copyToClipboard(urls.lte, '«Обход LTE»'));
-        document.getElementById('happLteBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
-        document.getElementById('v2rayLteBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
+        // --- Pepe Plan Buttons ---
+        document.getElementById('openPepeBtn').addEventListener('click', function() {
+            try {
+                window.location.href = pepeLink;
+                showToast('🚀 Открываем Happ...');
+                setTimeout(() => {
+                    if (!document.hidden) {
+                        showToast('💡 Если не открылось, скопируйте ссылку вручную');
+                    }
+                }, 2500);
+            } catch (e) {
+                copyToClipboard(pepeLink, 'Pepe');
+            }
+        });
+
+        document.getElementById('copyPepeBtn').addEventListener('click', () => copyToClipboard(pepeLink, 'Pepe'));
+        document.getElementById('pepeLink').addEventListener('click', () => copyToClipboard(pepeLink, 'Pepe'));
     </script>
 </body>
 </html>
