@@ -1,12 +1,18 @@
 #subscription-userinfo: upload=0; download=0; total=9999999999999999; expire=1798761600
 #announce: 🚀 Бесплатная подписка от @CodiNetVPN
 #profile-title: 🌟 CodiNET | Стандарт
-#profile-update-interval: 12
+#profile-update-interval: 2
 #profile-web-page-url: https://t.me/CodiNetVPN
 #support-url: https://t.me/CodiNetVPNbot
+
+vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#Хочешь играть? Тогда тебе в @DropPepebot
+vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#ИГРОВОЙ БОТ ПРЯМО В ТГ!
 
 vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:56745?encryption=none&security=none&type=tcp#🇦🇿 Азербайджан | pytonvpn
 vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:12672?encryption=none&security=none&type=tcp#🇫🇮 Финляндия
 vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:57836?encryption=none&security=none&type=tcp#🇦🇪 ОАЭ
 vless://bfa91d79-049c-41e1-be94-029397377150@87.242.85.201:35412?encryption=none&security=none&type=tcp#🇸🇪 Швеция
 vless://bfa91d79-049c-41e1-be94-029397377150@87.242.85.201:13561?encryption=none&security=none&type=tcp#🇳🇱 Нидерланды
+
+vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none# МЕСТО СВОБОДНО
+vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#💬 ПОДДЕРЖКА: @CodiNetVPN
