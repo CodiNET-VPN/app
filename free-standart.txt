@@ -1,18 +1,27 @@
 #subscription-userinfo: upload=0; download=0; total=9999999999999999; expire=1798761600
 #announce: 🚀 Бесплатная подписка от @CodiNetVPN
 #profile-title: 🌟 CodiNET | Стандарт
-#profile-update-interval: 2
+#profile-update-interval: 6
 #profile-web-page-url: https://t.me/CodiNetVPN
 #support-url: https://t.me/CodiNetVPNbot
 
-vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#Хочешь играть. Тогда тебе в @DropPepebot
-vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#ИГРОВОЙ БОТ ПРЯМО В ТГ!
+========== 🇸🇪 Швеция ==========
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@87.120.196.88:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=-jKb8W3EZEw-R1kwqL3j0JZVA9ukoSvJrWyHThz-glc&sid=a1b2c3d4&type=tcp#🇸🇪 Швеция | Биза
 
-vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:56745?encryption=none&security=none&type=tcp#🇦🇿 Азербайджан | pytonvpn
-vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:12672?encryption=none&security=none&type=tcp#🇫🇮 Финляндия
-vless://bfa91d79-049c-41e1-be94-029397377150@176.123.165.127:57836?encryption=none&security=none&type=tcp#🇦🇪 ОАЭ
-vless://bfa91d79-049c-41e1-be94-029397377150@87.242.85.201:35412?encryption=none&security=none&type=tcp#🇸🇪 Швеция
-vless://bfa91d79-049c-41e1-be94-029397377150@87.242.85.201:13561?encryption=none&security=none&type=tcp#🇳🇱 Нидерланды
+========== 🇳🇱 Нидерланды ==========
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@153.80.249.67:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=eJfq8tU0Ei_lWSK8YmHlwJDvL1cVe2v-L1y9obk_zxc&sid=a1b2c3d4&type=tcp#🇳🇱 Нидерланды | Понент
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@31.76.252.116:443?encryption=none&security=reality&sni=id-014.rita-cloud.com&fp=firefox&pbk=u5smm_s6QnIHXYpMiTrpCqaofvW5r4uZ4e-B9tw0mX0&sid=26500440d802a969&type=tcp&flow=xtls-rprx-vision#🇳🇱 Нидерланды | Марин
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@138.124.79.253:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=DqbOF10lik2xFSz5N6I2IcMYhLGU9hW6qbgy-POhUHE&sid=a1b2c3d4&type=tcp#🇳🇱 Нидерланды | Грегаль
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@153.80.249.73:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=-0yOCAP75LkBtMWOCyZhb_1WaInxEAKMZiSjt6OUWiQ&sid=a1b2c3d4&type=tcp#🇳🇱 Нидерланды | Гарби
 
-vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none# МЕСТО СВОБОДНО
-vless://00000000-0000-0000-0000-000000000000@0.0.0.0:0?encryption=none&type=tcp&security=none#💬 ПОДДЕРЖКА: @CodiNetVPN
+========== 🇵🇱 Польша ==========
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@31.76.94.29:443?encryption=none&security=reality&sni=ya.ru&fp=firefox&pbk=A2qy4jLpfTRESEdmLzmUKvfr5p2Rp-DhiZoY7FxwgGI&sid=a1b2c3d4&type=tcp#🇵🇱 Польша | Зонда
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@31.76.251.222:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=kUjzm1LHNDhxJ9x_DKU7efxoyTZKXCJAbmtdAFDF-3s&sid=a1b2c3d4&type=tcp#🇵🇱 Польша | Зефир
+
+========== 🇩🇪 Германия ==========
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@193.233.198.220:443?encryption=none&security=reality&sni=www.ya.ru&fp=firefox&pbk=NUefKitvfMI864jgqEtNRuPWjLMLj1YfLb7w8tXZv3k&sid=a1b2c3d4&type=tcp#🇩🇪 Германия | Сирокко
+
+========== 🇷🇺 Россия ==========
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@138.16.186.64:443?encryption=none&security=reality&sni=ru-agent.rita-cloud.com&fp=firefox&pbk=MjP_Bia8QfCOQodFwxc8SAeyT89kFuClBJyV4lnJYGU&sid=a172640a7be77d16&type=tcp&flow=xtls-rprx-vision#🇷🇺 Россия | Баргузин
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@85.198.108.15:443?encryption=none&security=reality&sni=rr-13.rita-cloud.com&fp=firefox&pbk=ftMC57u002NxCQ2KFWC95-f_ac1Y48r3WYrXpLfNWnY&sid=36913418de68d0ef&type=xhttp&path=%2Fassets%2F76e8413b&mode=stream-one#🇷🇺 Россия | Верховик | XHTTP
+vless://5c56fcf7-ab46-44b4-bb36-86d2a59f911f@85.198.108.15:443?encryption=none&security=reality&sni=rr-12.rita-cloud.com&fp=firefox&pbk=ftMC57u002NxCQ2KFWC95-f_ac1Y48r3WYrXpLfNWnY&sid=36913418de68d0ef&type=tcp&flow=xtls-rprx-vision#🇷🇺 Россия | Верховик | TCP
