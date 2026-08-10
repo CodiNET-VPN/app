@@ -21,7 +21,6 @@
             padding: 20px;
         }
 
-        /* Шапка */
         .header {
             background: white;
             border-radius: 24px;
@@ -52,7 +51,6 @@
             margin-top: 8px;
         }
 
-        /* Переключатель тарифов */
         .tabs {
             display: flex;
             gap: 12px;
@@ -121,7 +119,6 @@
             color: #ce93d8;
         }
 
-        /* Основная карточка */
         .card {
             background: white;
             border-radius: 24px;
@@ -159,6 +156,11 @@
         .badge-premium {
             background: #fff3e0;
             color: #e65100;
+        }
+
+        .badge-dev {
+            background: #fce4ec;
+            color: #c62828;
         }
 
         .price {
@@ -275,6 +277,16 @@
             background: linear-gradient(135deg, #bf360c, #ef6c00);
         }
 
+        .btn-disabled {
+            background: #e0e0e0;
+            color: #999;
+            cursor: not-allowed;
+        }
+
+        .btn-disabled:hover {
+            background: #e0e0e0;
+        }
+
         .manual-link {
             background: #f9f9f9;
             padding: 12px;
@@ -313,7 +325,6 @@
             margin-top: 20px;
         }
 
-        /* Блок с Telegram */
         .telegram-section {
             background: white;
             border-radius: 20px;
@@ -406,48 +417,19 @@
             border-top: 1px solid #eee;
         }
 
-        /* Блок для покупки */
-        .purchase-info {
-            background: #fff8e1;
+        .dev-notice {
+            background: #fce4ec;
             border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
-            border: 1px solid #ffe0b2;
+            border: 1px solid #ef9a9a;
+            text-align: center;
         }
 
-        .purchase-info .price-big {
-            font-size: 28px;
-            font-weight: 700;
-            color: #e65100;
-        }
-
-        .purchase-info .price-big span {
+        .dev-notice p {
             font-size: 14px;
-            font-weight: 400;
-            color: #888;
-        }
-
-        .purchase-info p {
-            font-size: 13px;
-            color: #555;
-            margin-top: 8px;
-        }
-
-        .purchase-info .contact {
-            display: inline-block;
-            margin-top: 10px;
-            background: #e65100;
-            color: white;
-            padding: 8px 24px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background 0.2s;
-        }
-
-        .purchase-info .contact:hover {
-            background: #bf360c;
+            color: #c62828;
+            font-weight: 500;
         }
 
         @media (max-width: 500px) {
@@ -490,15 +472,14 @@
         </div>
     </div>
 
-    <!-- Переключатель тарифов -->
     <div class="tabs">
         <div class="tab active" data-tab="standard">
-            <div class="tab-title">🌟 Стандартный</div>
+            <div class="tab-title">🌟 Стандарт</div>
             <div class="tab-price">Бесплатно</div>
         </div>
         <div class="tab tab-premium" data-tab="premium">
             <div class="tab-title">⭐ Премиум</div>
-            <div class="tab-price">30 ₽ / мес</div>
+            <div class="tab-price">В разработке</div>
         </div>
         <div class="tab" data-tab="pepe">
             <div class="tab-title">🐸 Pepe</div>
@@ -506,73 +487,73 @@
         </div>
     </div>
 
-    <!-- КАРТОЧКА СТАНДАРТНОГО ТАРИФА -->
+    <!-- СТАНДАРТ -->
     <div class="card" id="standardCard">
         <div class="badge">⭐ Бесплатный тариф!</div>
-        <h1>Стандартный</h1>
+        <h1>Стандарт</h1>
         <div class="price">0 ₽ <span>/ месяц</span></div>
         <div class="description">
-            Основной тариф для стабильного обхода блокировок YouTube, Instagram и других сервисов. Надёжные, проверенные серверы.
+            Основной тариф для стабильного обхода блокировок. Надёжные серверы, безлимитный трафик и поддержка всех популярных протоколов.
         </div>
         <div class="features">
             <div class="feature">Безлимитный трафик</div>
             <div class="feature">До 50 Мбит/с</div>
-            <div class="feature">6+ серверов в Европе</div>
+            <div class="feature">11 серверов в 5 странах</div>
             <div class="feature">Поддержка VLESS + Reality</div>
             <div class="feature">Действует до 31.12.2026</div>
         </div>
 
         <button class="btn btn-copy" id="copyStandardBtn">📋 Скопировать подписку</button>
-        <a href="happ://subscribe?url=https://codinet-vpn.github.io/app/free-standart.txt" class="btn btn-happ" id="happStandardBtn">🚀 Открыть в Happ</a>
-        <a href="v2raytun://subscribe?url=https://codinet-vpn.github.io/app/free-standart.txt" class="btn btn-v2ray" id="v2rayStandardBtn">🔌 Открыть в V2RayTUN</a>
+        <a href="happ://subscribe?url=https://gidroksi.duckdns.org:8080/s/v9RY9M" class="btn btn-happ" id="happStandardBtn">🚀 Открыть в Happ</a>
+        <a href="v2raytun://subscribe?url=https://gidroksi.duckdns.org:8080/s/v9RY9M" class="btn btn-v2ray" id="v2rayStandardBtn">🔌 Открыть в V2RayTUN</a>
 
         <div class="manual-link">
             <div class="link-label">📎 Ссылка для импорта</div>
-            <span class="link-value" id="standardLink">https://codinet-vpn.github.io/app/free-standart.txt</span>
+            <span class="link-value" id="standardLink">https://gidroksi.duckdns.org:8080/s/v9RY9M</span>
         </div>
         <div class="info">
             🔹 <strong>Инструкция:</strong> Нажмите «Скопировать» → Откройте Happ/V2RayTUN → «+» → «Импорт по ссылке» → Вставьте.
         </div>
     </div>
 
-    <!-- КАРТОЧКА ПРЕМИУМ ТАРИФА -->
+    <!-- ПРЕМИУМ (В РАЗРАБОТКЕ) -->
     <div class="card" id="premiumCard" style="display: none;">
-        <div class="badge badge-premium">👑 Премиум доступ</div>
+        <div class="badge badge-dev">🚧 В разработке</div>
         <h1>⭐ Премиум</h1>
-        <div class="price">30 ₽ <span>/ месяц</span></div>
+        <div class="price">— <span>скоро</span></div>
         <div class="description">
-            Расширенный тариф с большим количеством серверов и приоритетным обслуживанием. Идеально для стриминга и игр.
+            Расширенный тариф с большим количеством серверов, приоритетным обслуживанием и эксклюзивными протоколами. Скоро!
         </div>
         <div class="features">
             <div class="feature feature-premium">Безлимитный трафик</div>
             <div class="feature feature-premium">До 100 Мбит/с</div>
             <div class="feature feature-premium">21+ сервер в 6 странах</div>
             <div class="feature feature-premium">Протоколы: VLESS + Reality / XHTTP</div>
-            <div class="feature feature-premium">Действует до 31.12.2026</div>
             <div class="feature feature-premium">Приоритетная поддержка</div>
-            <div class="feature feature-premium">📱 1 устройство</div>
+            <div class="feature feature-premium">📱 До 3 устройств</div>
         </div>
 
-        <div class="purchase-info">
-            <div class="price-big">30 ₽ <span>/ месяц</span></div>
-            <p>Для получения премиум-подписки напишите в Telegram:</p>
-            <a href="https://t.me/CodiNetVPNbot" class="contact" target="_blank">🤖 Написать боту</a>
+        <div class="dev-notice">
+            <p>🚧 Тариф «Премиум» временно недоступен</p>
+            <p style="font-size: 13px; color: #888; margin-top: 4px; font-weight: 400;">
+                Следите за новостями в Telegram-канале
+            </p>
         </div>
 
-        <button class="btn btn-premium" id="copyPremiumBtn">📋 Скопировать подписку</button>
-        <a href="happ://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt" class="btn btn-happ" id="happPremiumBtn">🚀 Открыть в Happ</a>
-        <a href="v2raytun://subscribe?url=https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt" class="btn btn-v2ray" id="v2rayPremiumBtn">🔌 Открыть в V2RayTUN</a>
+        <button class="btn btn-disabled" disabled>⏳ Скоро</button>
+        <button class="btn btn-disabled" disabled>⏳ Скоро</button>
+        <button class="btn btn-disabled" disabled>⏳ Скоро</button>
 
-        <div class="manual-link">
+        <div class="manual-link" style="opacity: 0.5;">
             <div class="link-label">📎 Ссылка для импорта</div>
-            <span class="link-value" id="premiumLink">https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt</span>
+            <span class="link-value" style="color: #ccc;">— временно недоступно —</span>
         </div>
         <div class="info">
-            🔹 <strong>Инструкция:</strong> После оплаты вы получите ссылку. Вставьте её в Happ или V2RayTUN.
+            🔹 <strong>Подписка на Премиум</strong> будет доступна после завершения разработки. Следите за анонсами!
         </div>
     </div>
 
-    <!-- КАРТОЧКА PEPE ТАРИФА -->
+    <!-- PEPE -->
     <div class="card" id="pepeCard" style="display: none;">
         <div class="badge badge-pepe">🐸 Бесплатная подписка</div>
         <h1>🐸 Pepe</h1>
@@ -581,26 +562,27 @@
             Специальный тариф с зашифрованной подпиской. Ключи собраны вручную на надёжных серверах по всему миру.
         </div>
         <div class="features">
-            <div class="feature feature-pepe">Зашифрованная подписка crypt5</div>
+            <div class="feature feature-pepe">Современная защита</div>
             <div class="feature feature-pepe">Серверы в 7 странах</div>
             <div class="feature feature-pepe">Протоколы: VLESS, Trojan, Hysteria</div>
             <div class="feature feature-pepe">Оптимально для Happ</div>
             <div class="feature feature-pepe">Надёжные серверы от CodiNET</div>
         </div>
 
-        <button class="btn btn-pepe" id="openPepeBtn">🚀 Открыть в Happ (crypt5)</button>
-        <button class="btn btn-copy" id="copyPepeBtn">📋 Скопировать ссылку</button>
+        <button class="btn btn-copy" id="copyPepeBtn">📋 Скопировать подписку</button>
+        <a href="happ://subscribe?url=https://gidroksi.duckdns.org:8080/s/OGswi8" class="btn btn-happ" id="happPepeBtn">🚀 Открыть в Happ</a>
+        <a href="v2raytun://subscribe?url=https://gidroksi.duckdns.org:8080/s/OGswi8" class="btn btn-v2ray" id="v2rayPepeBtn">🔌 Открыть в V2RayTUN</a>
 
         <div class="manual-link">
-            <div class="link-label">📎 Ссылка для импорта (crypt5)</div>
-            <span class="link-value" id="pepeLink">happ://crypt5/fzvd9rrl5hOdi1FBgLsukDjc12YGBW4SOoacIWQFfN6IchGRl+xGw5t/PM9FcbXuMAV8RVae0a8/lkov4xM3H2/zAwHy2scRPLg0fIOPn36mD/4BhRmXpwYuf0H5Ua+I4f1AjXf4oktPrY+ZMt/eOnv50gk=vZInmXDimy0KMnmcUEK9g7XeufuXIBreQ139xdapYfUBTuauJn15xuFOeZU6OG6mRllX3FRMu7NLONvqwBddBOK3mWQrcZrhjjXA6gTNLGa3FRxf6w5xjDvVZO5bqE7oKQPK3wi2b8llAecwienz/5ZTVIPRIXOOIzKsH38Ja7xElKX1Ub/yXNchE3N+rbvBdLtMZHx6CITHhoEGhtssyoi3P5f9RGlTL4z0sQaNOqo1XuY4fgZqNVsMC/X0h05wROF+4k+I4Wuu5fIBwXV4afu4uZG2k8q8Zzie7DUB/mZTc59DEWdCqXdENWP1XEbKf1hmAIGVPCcOeL1Ua85/33mgwvaHBTJQkr4g7wQwRgDXjL9iYv3NxKrnEcivk97fV7arfiQODzF+i4BIWUGTl60T9DMUvY+0PnTse91tzBE6JXm965+XYKbOoL+eL/lt4gJ00pGzg+6AT9/fCGTXDBPds13Xh8X/mn1EmSeRL+0pZzjBScZOt74S9zOA/6Sy1CxDTqxX/hOT8i6fply8CGASIjsC4wkAYSYsPObG5MqFpA7gWGhmHF9ve9C0NFjpPPv8ODsBBOW5ZT6XCGfqpqbYXWCH2tGr/BcASnQrIaS0h/tPTAonOByPctx57SCuL4ImC3VG/zAwfiST5f0tYWquetCNl3AYat6bzVA1foU=ff</span>
+            <div class="link-label">📎 Ссылка для импорта</div>
+            <span class="link-value" id="pepeLink">https://gidroksi.duckdns.org:8080/s/OGswi8</span>
         </div>
         <div class="info">
-            🔹 <strong>Инструкция:</strong> Нажмите «Открыть в Happ» для автоматического добавления подписки. Если не открывается, скопируйте ссылку вручную.
+            🔹 <strong>Инструкция:</strong> Скопируйте ссылку → Откройте Happ/V2RayTUN → «+» → «Импорт по ссылке» → Вставьте.
         </div>
     </div>
 
-    <!-- Блок с Telegram -->
+    <!-- Telegram -->
     <div class="telegram-section">
         <div class="telegram-title">📢 Следите за новостями и обновлениями</div>
         <div class="telegram-links">
@@ -618,25 +600,20 @@
         </div>
     </div>
 
-    <!-- Футер -->
     <div class="footer">
         © 2025 CodiNET VPN<br>
         Бесплатный и открытый доступ к интернету для всех.
     </div>
 
-    <!-- Уведомление -->
     <div id="toast" class="toast">✅ Ссылка скопирована!</div>
 
     <script>
-        // URL подписок
+        // Новые ссылки
         const urls = {
-            standard: "https://codinet-vpn.github.io/app/free-standart.txt",
-            premium: "https://aslan2280.github.io/CodiNET-VPN/premium-standart.txt",
+            standard: "https://gidroksi.duckdns.org:8080/s/v9RY9M",
+            pepe: "https://gidroksi.duckdns.org:8080/s/OGswi8"
         };
 
-        const pepeLink = "happ://crypt5/fzvd9rrl5hOdi1FBgLsukDjc12YGBW4SOoacIWQFfN6IchGRl+xGw5t/PM9FcbXuMAV8RVae0a8/lkov4xM3H2/zAwHy2scRPLg0fIOPn36mD/4BhRmXpwYuf0H5Ua+I4f1AjXf4oktPrY+ZMt/eOnv50gk=vZInmXDimy0KMnmcUEK9g7XeufuXIBreQ139xdapYfUBTuauJn15xuFOeZU6OG6mRllX3FRMu7NLONvqwBddBOK3mWQrcZrhjjXA6gTNLGa3FRxf6w5xjDvVZO5bqE7oKQPK3wi2b8llAecwienz/5ZTVIPRIXOOIzKsH38Ja7xElKX1Ub/yXNchE3N+rbvBdLtMZHx6CITHhoEGhtssyoi3P5f9RGlTL4z0sQaNOqo1XuY4fgZqNVsMC/X0h05wROF+4k+I4Wuu5fIBwXV4afu4uZG2k8q8Zzie7DUB/mZTc59DEWdCqXdENWP1XEbKf1hmAIGVPCcOeL1Ua85/33mgwvaHBTJQkr4g7wQwRgDXjL9iYv3NxKrnEcivk97fV7arfiQODzF+i4BIWUGTl60T9DMUvY+0PnTse91tzBE6JXm965+XYKbOoL+eL/lt4gJ00pGzg+6AT9/fCGTXDBPds13Xh8X/mn1EmSeRL+0pZzjBScZOt74S9zOA/6Sy1CxDTqxX/hOT8i6fply8CGASIjsC4wkAYSYsPObG5MqFpA7gWGhmHF9ve9C0NFjpPPv8ODsBBOW5ZT6XCGfqpqbYXWCH2tGr/BcASnQrIaS0h/tPTAonOByPctx57SCuL4ImC3VG/zAwfiST5f0tYWquetCNl3AYat6bzVA1foU=ff";
-
-        // Элементы карточек
         const standardCard = document.getElementById('standardCard');
         const premiumCard = document.getElementById('premiumCard');
         const pepeCard = document.getElementById('pepeCard');
@@ -665,7 +642,6 @@
             });
         }
 
-        // Переключение между тарифами
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const tabName = tab.getAttribute('data-tab');
@@ -687,35 +663,17 @@
             });
         });
 
-        // --- Standard Plan Buttons ---
-        document.getElementById('copyStandardBtn').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандартный»'));
+        // Стандарт
+        document.getElementById('copyStandardBtn').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандарт»'));
         document.getElementById('happStandardBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
         document.getElementById('v2rayStandardBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
-        document.getElementById('standardLink').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандартный»'));
+        document.getElementById('standardLink').addEventListener('click', () => copyToClipboard(urls.standard, '«Стандарт»'));
 
-        // --- Premium Plan Buttons ---
-        document.getElementById('copyPremiumBtn').addEventListener('click', () => copyToClipboard(urls.premium, '«Премиум»'));
-        document.getElementById('happPremiumBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
-        document.getElementById('v2rayPremiumBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
-        document.getElementById('premiumLink').addEventListener('click', () => copyToClipboard(urls.premium, '«Премиум»'));
-
-        // --- Pepe Plan Buttons ---
-        document.getElementById('openPepeBtn').addEventListener('click', function() {
-            try {
-                window.location.href = pepeLink;
-                showToast('🚀 Открываем Happ...');
-                setTimeout(() => {
-                    if (!document.hidden) {
-                        showToast('💡 Если не открылось, скопируйте ссылку вручную');
-                    }
-                }, 2500);
-            } catch (e) {
-                copyToClipboard(pepeLink, 'Pepe');
-            }
-        });
-
-        document.getElementById('copyPepeBtn').addEventListener('click', () => copyToClipboard(pepeLink, 'Pepe'));
-        document.getElementById('pepeLink').addEventListener('click', () => copyToClipboard(pepeLink, 'Pepe'));
+        // Pepe
+        document.getElementById('copyPepeBtn').addEventListener('click', () => copyToClipboard(urls.pepe, '«Pepe»'));
+        document.getElementById('happPepeBtn')?.addEventListener('click', () => setTimeout(() => showToast('🚀 Открываем Happ...'), 500));
+        document.getElementById('v2rayPepeBtn')?.addEventListener('click', () => setTimeout(() => showToast('🔌 Открываем V2RayTUN...'), 500));
+        document.getElementById('pepeLink').addEventListener('click', () => copyToClipboard(urls.pepe, '«Pepe»'));
     </script>
 </body>
 </html>
